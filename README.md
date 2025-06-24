@@ -43,6 +43,38 @@ Create a neural network that maps a 4-bit binary input to a single decimal value
 - Accuracy tracking and prediction display
 ---
 
+## Problem 3: XOR Gate Learner (Binary Classification)
+
+### 🧠 Problem Statement:
+Build a manual neural network from scratch to learn the XOR gate logic using only NumPy. The XOR gate is a classic example of a problem that is **not linearly separable** and therefore cannot be solved by a single-layer perceptron. Your goal is to demonstrate how a multi-layer neural network can successfully model this logic using backpropagation and sigmoid activation.
+
+### 🛠️ Approach:
+- Constructed a simple neural network using NumPy arrays for weights and biases.
+- Used two binary inputs representing the logic gate values (0 or 1).
+- Designed the dataset to include **20 samples** with repeated XOR patterns for better training.
+- Implemented:
+  - Feedforward computation using sigmoid activations.
+  - Backpropagation logic manually across all layers.
+  - Training using mean squared error loss.
+- Evaluated accuracy by comparing predicted outputs with actual XOR values.
+
+### 📊 Input Format:
+Each input is a 2D binary vector `[A, B]` representing the two inputs of the XOR gate.
+
+### ✅ Expected Output:
+The output is a binary value (0 or 1) indicating the result of `A XOR B`.
+
+### 📎 Example:
+| A | B | A XOR B |
+|---|---|---------|
+| 0 | 0 |   0     |
+| 0 | 1 |   1     |
+| 1 | 0 |   1     |
+| 1 | 1 |   0     |
+
+This project showcases how neural networks solve non-linear problems when handcrafted from scratch — great for understanding the math behind training!
+
+
 ## 📌 Notes:
 - They are **not optimized for production** or large-scale data.
 - These projects illustrate the core logic behind deep learning: matrix ops, activations, loss, and gradient descent.
